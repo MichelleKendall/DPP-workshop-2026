@@ -1,0 +1,8 @@
+- name: Home
+  link: /index
+- name: Programme
+  link: /programme/
+- name: Location
+  link: /location/
+- name: Contact
+  link: /contact/
