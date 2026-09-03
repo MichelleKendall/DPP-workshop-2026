@@ -30,6 +30,8 @@
 
 	.hero-text-container {
 		width: 600px;
+    		max-width: 100%;
+    		box-sizing: border-box;
 		text-align: left;
 
 		h1, h2, p, .button {
@@ -38,7 +40,7 @@
 	}
 
 	.hero-text-right {
-		position: absolute;
+		position: static;
 		right: 0;
 	}
 }
@@ -71,4 +73,34 @@
 	.content section:nth-child(even) .flex {
 		flex-direction: row-reverse;
 	}
+}
+
+@media (max-width: 600px) {
+    .hero {
+        min-height: 500px;
+        background-position: center center;
+
+        .hero-text-container {
+            width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .hero-text-right {
+            position: static;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            line-height: 1.15;
+        }
+
+        h2 {
+            font-size: 1.4em;
+        }
+
+        p {
+            font-size: 1em;
+        }
+    }
 }

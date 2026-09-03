@@ -80,11 +80,13 @@ p, address, ul {
     height: 100%; }
   .hero .hero-text-container {
     width: 600px;
+    max-width: 100%;
+    box-sizing: border-box;
     text-align: left; }
     .hero .hero-text-container h1, .hero .hero-text-container h2, .hero .hero-text-container p, .hero .hero-text-container .button {
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8); }
   .hero .hero-text-right {
-    position: absolute;
+    position: static;
     right: 0; }
 
 .image {
@@ -111,6 +113,23 @@ p, address, ul {
 
   .content section:nth-child(even) .flex {
     flex-direction: row-reverse; } }
+@media (max-width: 600px) {
+  .hero {
+    min-height: 500px;
+    background-position: center center; }
+    .hero .hero-text-container {
+      width: 100%;
+      padding: 0 20px;
+      box-sizing: border-box; }
+    .hero .hero-text-right {
+      position: static; }
+    .hero h1 {
+      font-size: 2.2em;
+      line-height: 1.15; }
+    .hero h2 {
+      font-size: 1.4em; }
+    .hero p {
+      font-size: 1em; } }
 .container, .text-container {
   margin: 0 auto;
   position: relative;
