@@ -3,6 +3,8 @@ left_links:
     link: /index
   - name: Programme
     link: /programme/
+  - name: Abstracts
+    link: /abstracts/
   - name: Location
     link: /location/
   - name: Contact
